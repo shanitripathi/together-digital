@@ -135,7 +135,8 @@
   cursor: pointer;
   border: 2px solid transparent;
 }
-.navbar-container .navbar .navlinks li:hover {
+.navbar-container .navbar .navlinks li:hover,
+.navbar-container .navbar .navlinks .active {
   color: black;
   border-bottom: 2px solid black;
 }
@@ -156,6 +157,7 @@
 .navbar-container .post-description .post-genre {
   font-size: small;
   font-weight: 500;
+  cursor: pointer;
 }
 .navbar-container .post-description .insights {
   color: #f9a06a;
@@ -181,6 +183,7 @@
 .navbar-container .post-description .post-content span {
   font-size: small;
   color: #929292;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -279,8 +282,12 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .header-col h1 {
+  h1 {
     font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
   }
 }
 .slider-col {
@@ -301,17 +308,32 @@
 
 .slider-container {
   overflow: hidden;
+  z-index: 1;
+  position: relative;
 }
 
-.shadow {
+@media only screen and (min-width: 1220px) {
+  .slider-container {
+    padding-left: 5% !important;
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 1220px) {
+  .slider-container {
+    padding-left: 10% !important;
+  }
+}
+.sectors-container {
+  position: relative;
+}
+.sectors-container .shadow-box {
   position: absolute;
-  background-color: yellow;
-  opacity: 0.5;
-  left: -20%;
-  right: 0;
-  top: 0;
-  bottom: -10%;
-  transform: translate(50px, 10px);
+  top: 0px;
+  bottom: 0;
+  left: 5%;
+  right: 15px;
+  background-color: #f3f6f8;
+  transform: translate(0, 40%);
+  z-index: 0;
 }
 
 body {
