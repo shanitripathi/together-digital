@@ -252,8 +252,8 @@
 .sectors-container .header-col {
   display: flex;
   justify-content: space-between;
-  position: relative;
   margin-bottom: 20px;
+  align-items: center;
 }
 .sectors-container .header-col h1 {
   font-weight: 600;
@@ -264,6 +264,7 @@
   height: 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-radius: 2px;
 }
 .sectors-container .header-col button {
@@ -317,6 +318,7 @@ body {
   padding: 0;
   user-select: none;
   font-family: "poppins";
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

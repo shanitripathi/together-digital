@@ -202,8 +202,9 @@
   .header-col {
     display: flex;
     justify-content: space-between;
-    position: relative;
+
     margin-bottom: 20px;
+    align-items: center;
     h1 {
       font-weight: 600;
     }
@@ -213,6 +214,7 @@
       height: 30px;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       border-radius: 2px;
     }
     button {
