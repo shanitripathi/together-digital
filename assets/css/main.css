@@ -260,7 +260,7 @@
 }
 .sectors-container .header-col .prev-next {
   background-color: #98a9ba;
-  width: 70px;
+  width: auto;
   height: 30px;
   display: flex;
   justify-content: space-between;
@@ -275,6 +275,7 @@
 .sectors-container .header-col button i {
   font-size: medium;
   color: white;
+  padding: 5px;
 }
 
 @media only screen and (max-width: 500px) {

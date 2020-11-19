@@ -1,7 +1,7 @@
 const prev = document.querySelector(".prev-btn");
 const next = document.querySelector(".next-btn");
 const images = document.querySelectorAll(".slider-col img");
-const amount = 250;
+const amount = 300;
 const totalWidth = images.length * 200;
 
 // slidler animation
