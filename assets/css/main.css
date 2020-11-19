@@ -265,9 +265,6 @@
   display: flex;
   justify-content: space-between;
   border-radius: 2px;
-  position: absolute;
-  right: 0;
-  bottom: 20%;
 }
 .sectors-container .header-col button {
   border: none;
