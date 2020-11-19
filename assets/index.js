@@ -25,7 +25,7 @@ function nextSlide() {
   images.forEach((img) => {
     img.style.transform = "translatex(" + initial + "px)";
   });
-  console.log(initial, totalWidth);
+
   classAdd();
 }
 function previousSlide() {
