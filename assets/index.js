@@ -58,3 +58,15 @@ function active() {
 }
 
 active();
+
+const loader = document.querySelector(".loader");
+const height = document.body.clientHeight - window.innerHeight;
+function loading() {
+  let varHeight = window.pageYOffset;
+  let move = (varHeight / height) * 100;
+  loader.style.width = `${move}vw`;
+
+  console.log(`${move}vw`);
+}
+
+window.addEventListener("scroll", loading);
